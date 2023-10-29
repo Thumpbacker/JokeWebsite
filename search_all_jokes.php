@@ -14,7 +14,7 @@
 </head>
 <?php
 include "db_connect.php";
-$sql = "SELECT * FROM JokesPart1";
+$sql = "SELECT JokeID, Joke_question, Joke_answer, user_id FROM Jokes_table";
 
 $result = $mysqli->query($sql);
 if ($result->num_rows > 0) {
